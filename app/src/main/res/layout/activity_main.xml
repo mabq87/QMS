@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/RoomNo"
+        android:layout_width="800dp"
+        android:layout_height="350dp"
+        android:background="#003366"
+        android:gravity="center"
+        android:text="@string/value_RoomNo"
+        android:textColor="@android:color/white"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Consultant"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="150dp"
+        android:background="#003366"
+        android:gravity="center"
+        android:text="@string/value_Consultant"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-3dp" />
+
+    <TextView
+        android:id="@+id/TokenHeading"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="342dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="528dp"
+        android:background="#003366"
+        android:gravity="center"
+        android:text="@string/heading_Token"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Token"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="432dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="378dp"
+        android:background="#E7F5FE"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/value_Token"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="150sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/StatusBar"
+        android:layout_width="86dp"
+        android:layout_height="50dp"
+        android:background="#003366"
+        android:gravity="center"
+        android:text="@string/value_StatusBar"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Message"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="612dp"
+        android:layout_marginBottom="268dp"
+        android:gravity="center"
+        android:text="@string/value_Message"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Other Views-->
+
+    <!--Full Screen Progress Layout-->
+
+
+    <include
+        android:id="@+id/my_loading_layout"
+        layout="@layout/my_loading_layout"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

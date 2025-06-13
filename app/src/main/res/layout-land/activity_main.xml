@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#f0ead6">
+
+    <TextView
+        android:id="@+id/Consultant"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#70b62c"
+        android:gravity="center"
+        android:text="@string/value_Consultant"
+        android:textColor="@android:color/black"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/RoomNo"
+        app:layout_constraintLeft_toRightOf="@id/RoomNo"
+        app:layout_constraintTop_toBottomOf="@+id/RoomNo" />
+
+    <TextView
+        android:id="@+id/RoomNo"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#70b62c"
+        android:gravity="center"
+        android:text="@string/value_RoomNo"
+        android:textColor="@android:color/black"
+        android:textSize="120sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TokenHeading"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
+        android:background="#70b62c"
+        android:gravity="center"
+        android:text="@string/heading_Token"
+        android:textColor="@android:color/black"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Consultant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Consultant"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/Token"
+        android:layout_width="600dp"
+        android:layout_height="250dp"
+        android:background="#cbf1a6"
+        android:gravity="center"
+        android:text="@string/value_Token"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="200sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/TokenHeading"
+        app:layout_constraintLeft_toRightOf="@id/TokenHeading"
+        app:layout_constraintTop_toBottomOf="@+id/TokenHeading" />
+
+    <TextView
+        android:id="@+id/Message"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/value_Message"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/Token"
+        app:layout_constraintLeft_toRightOf="@id/Token"
+        app:layout_constraintTop_toBottomOf="@+id/Token" />
+
+	<TextView
+        android:id="@+id/StatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginBottom="2dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="@string/value_StatusBar"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--Other Views-->
+
+    <!--Full Screen Progress Layout-->
+    <include
+        android:id="@+id/my_loading_layout"
+        layout="@layout/my_loading_layout"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Queue Management</string>
+    <string name="heading_Token">Queue Number</string>
+    <string name="value_Token">0</string>
+    <string name="value_Consultant">Consultant</string>
+    <string name="value_Message">Message</string>
+    <string name="value_RoomNo">Room No.</string>
+    <string name="value_StatusBar">StatusBar</string>
+</resources>
